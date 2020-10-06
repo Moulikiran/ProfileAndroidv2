@@ -6,42 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello World!"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <Button
         android:id="@+id/studies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginLeft="161dp"
-        android:layout_marginTop="246dp"
-        android:layout_marginBottom="437dp"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="56dp"
         android:text="Studies"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/skills"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/skills"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="166dp"
-        android:layout_marginLeft="166dp"
-        android:layout_marginTop="436dp"
-        android:layout_marginEnd="157dp"
-        android:layout_marginRight="157dp"
-        android:layout_marginBottom="247dp"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="54dp"
         android:text="Skills"
+        app:layout_constraintBottom_toTopOf="@+id/projects"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/aboutme"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="42dp"
+        android:text="About Me"
+        app:layout_constraintBottom_toTopOf="@+id/studies"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/projects"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="51dp"
+        android:text="Projects"
+        app:layout_constraintBottom_toTopOf="@+id/completed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/completed"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="74dp"
+        android:text="completed"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="329dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="46dp"
+        android:text="My Profile Navigator"
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutme"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

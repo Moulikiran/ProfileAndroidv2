@@ -39,7 +39,10 @@ public class MyActivity extends Activity {
                     wr.close();
                 } catch (IOException e) {
                     e.printStackTrace();
+                }catch (Exception e) {
+                    e.printStackTrace();
                 }
+
 
             }
         });

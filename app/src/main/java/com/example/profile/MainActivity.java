@@ -25,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
         final Button skillsButton = findViewById(R.id.skills);
 
+        final Button aboutmeButton = findViewById(R.id.aboutme);
+
+        final Button projectButton = findViewById(R.id.projects);
+
+        final Button completedButton = findViewById(R.id.completed);
+
         studiesButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 postData("education");
@@ -36,12 +42,30 @@ public class MainActivity extends AppCompatActivity {
                 postData("skills");
             }
         });
+
+        aboutmeButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                postData("aboutme");
+            }
+        });
+
+        projectButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                postData("projects");
+            }
+        });
+
+        completedButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                postData("null");
+            }
+        });
     }
 
     public void  postData(String select){
         {
             try{
-                String url = "http://10.35.112.128:8080/greeting/selectcomponent?name="+select;
+                String url = "https://myprofilespring.herokuapp.com/greeting/selectcomponent?name="+select;
                 System.out.println(url);
                 URL urlObj = new URL(url);
                 HttpURLConnection conn = (HttpURLConnection) urlObj.openConnection();
